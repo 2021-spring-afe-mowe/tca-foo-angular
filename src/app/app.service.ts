@@ -8,4 +8,6 @@ export class AppService {
   constructor() { }
 
   gameResults = [];
+
+  currentGameStartTime: Date;
 }

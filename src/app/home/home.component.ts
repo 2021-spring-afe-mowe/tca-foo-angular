@@ -15,14 +15,30 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    //console.log("ngOnInit()");
+
+    this.calculateGameLengthStats();
+  }
+
+  calculateGameLengthStats() {
+    const longest = Math.max(...this.appDataSvc.gameResults.map(x => x.endDateTime - x.startDateTime));
+    const shortest = Math.min(...this.appDataSvc.gameResults.map(x => x.endDateTime - x.startDateTime));
+
+    this.gameLengthStats = {
+      longest: isFinite(longest) ? longest : 0 
+      , shortest: isFinite(shortest) ? shortest : 0
+    };
   }
 
   playGame() {
+    this.appDataSvc.currentGameStartTime = new Date();
     this.router.navigateByUrl("/play");
   }
 
   get winningPercent() {
-    return this.appDataSvc.gameResults.filter(x => x == "W").length / this.appDataSvc.gameResults.length;
+    return this.appDataSvc.gameResults.filter(x => x.result == "W").length / this.appDataSvc.gameResults.length;
   }
 
+  gameLengthStats;
+  
 }

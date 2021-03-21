@@ -20,7 +20,11 @@ export class PlayComponent implements OnInit {
   winGame() {
     this.appDataSvc.gameResults = [
       ...this.appDataSvc.gameResults
-      , "W"
+      , {
+          result: "W"
+          , startDateTime: this.appDataSvc.currentGameStartTime
+          , endDateTime: new Date()
+      }
     ];
     this.router.navigateByUrl("/");
   }
@@ -28,8 +32,12 @@ export class PlayComponent implements OnInit {
   loseGame() {
     this.appDataSvc.gameResults = [
       ...this.appDataSvc.gameResults
-      , "L"
-    ];
+      , {
+        result: "L"
+        , startDateTime: this.appDataSvc.currentGameStartTime
+        , endDateTime: new Date()
+    }
+  ];
     this.router.navigateByUrl("/");
   }
 }
