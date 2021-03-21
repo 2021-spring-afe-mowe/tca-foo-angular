@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class AppService {
 
   constructor() { }
+
+  gameResults = [
+    "W"
+    , "L"
+  ];
 }
