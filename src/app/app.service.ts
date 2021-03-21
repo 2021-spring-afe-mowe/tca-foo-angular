@@ -7,8 +7,5 @@ export class AppService {
 
   constructor() { }
 
-  gameResults = [
-    "W"
-    , "L"
-  ];
+  gameResults = [];
 }
