@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppDataService } from '../app-data.service';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private routerSvc: Router
+    , public appData: AppDataService
   ) { }
 
   ngOnInit(): void {
