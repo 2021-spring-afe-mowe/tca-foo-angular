@@ -15,16 +15,20 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.gameTimeStats = this.appData.calculateGameTimeStats();
   }
 
   playGame() {
+    this.appData.currentGameStartTime = new Date();
     this.routerSvc.navigateByUrl("/play");
   }
 
   get winningPercentage() {
-    return 
-      this.appData.gameResults.filter(x => x == "W").length 
+    return (  
+      this.appData.gameResults.filter(x => x.result == "W").length 
       / this.appData.gameResults.length
-    ;
+    );
   }
+
+  gameTimeStats;
 }
