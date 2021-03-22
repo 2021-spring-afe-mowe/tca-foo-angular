@@ -21,4 +21,10 @@ export class HomeComponent implements OnInit {
     this.routerSvc.navigateByUrl("/play");
   }
 
+  get winningPercentage() {
+    return 
+      this.appData.gameResults.filter(x => x == "W").length 
+      / this.appData.gameResults.length
+    ;
+  }
 }
