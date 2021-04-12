@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1618258823165,
+  "index": "https://2021-spring-afe-mowe.github.io/tca-foo-angular/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/favicon.ico",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/index.html",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/main.60e9b179376812a9935a.js",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/manifest.webmanifest",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/polyfills.94daefd414b8355106ab.js",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/runtime.7b63b9fd40098a2e8207.js",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/styles.7ef862770c78071eab13.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-128x128.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-144x144.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-152x152.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-192x192.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-384x384.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-512x512.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-72x72.png",
+        "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-128x128.png": "a66f918c0b7eb24e12ed20bdeecd42ade744bfcf",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-144x144.png": "6b5063f78b6fc36ebd988e6f4d7d8ab449eef69b",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-152x152.png": "c7d337788a8a3cd58ea2f41d94d1b68931a3dcde",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-192x192.png": "9f02786de7885f778d1e357c3c5a6d7a11302fb7",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-384x384.png": "329fc30a6095fda594ab706a22972fb268da0335",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-512x512.png": "26c37773a2cde43432d7e04179d3ae5888a2cbf2",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-72x72.png": "b947ee90cad66e6d45f689283335217a1ba48e5b",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/assets/icons/icon-96x96.png": "e61c52d12f7f7dbf5993185f5a6bb413c3a72ae8",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/index.html": "10902e5507b763ed4c76b82b6278f2b1dfa66a4b",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/main.60e9b179376812a9935a.js": "0ce2ee763dbfe938091b6e0bae5d3b63247acc7a",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/manifest.webmanifest": "f65e6024c9220ec71aa489392228790b50baa836",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/polyfills.94daefd414b8355106ab.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://2021-spring-afe-mowe.github.io/tca-foo-angular/styles.7ef862770c78071eab13.css": "4eeba69e50ff66feff73f39694110224e62f4f0b"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
