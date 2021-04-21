@@ -31,4 +31,6 @@ export class HomeComponent implements OnInit {
   }
 
   gameTimeStats;
+
+  myProp = "Tom";
 }
